@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fest Memories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 shadow-md bg-pink-50">
+    <h1 class="text-2xl font-bold text-pink-600">Fest Memories</h1>
+    <div class="space-x-6">
+      <a href="#" class="hover:text-pink-500">Home</a>
+      <a href="#" class="hover:text-pink-500">Gallery</a>
+      <a href="#" class="hover:text-pink-500">Search</a>
+      <a href="#" class="hover:text-pink-500">Profile</a>
+      <button class="bg-pink-600 text-white rounded-full px-4 py-2">Login</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center text-center py-20 bg-gradient-to-r from-pink-100 to-purple-200">
+    <h2 class="text-5xl font-extrabold mb-4">Relive Your College Fest Memories 🎉</h2>
+    <p class="text-lg text-gray-700 max-w-xl">
+      Upload, organize, and preserve your unforgettable college fest moments at one place.
+    </p>
+    <div class="mt-6 space-x-4">
+      <button class="bg-pink-600 text-white rounded-full px-6 py-2">Explore Gallery</button>
+      <button class="bg-purple-600 text-white rounded-full px-6 py-2">Upload Photo</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <h3 class="text-3xl font-bold text-center mb-10">Why Choose Us?</h3>
+    <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
+      <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-pink-600">📸 Easy Upload</h4>
+        <p class="text-gray-600 mt-2">Upload your photos in seconds.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-pink-600">🎭 Event Categories</h4>
+        <p class="text-gray-600 mt-2">Cultural, Sports, Tech, Music, Dance.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-pink-600">🔒 Privacy Control</h4>
+        <p class="text-gray-600 mt-2">Make your memories public or private.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold text-pink-600">⭐ Golden Moments</h4>
+        <p class="text-gray-600 mt-2">Highlight top events from your fest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Uploads -->
+  <section class="py-16 bg-gray-50">
+    <h3 class="text-3xl font-bold text-center mb-10">Recent Uploads</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto px-6">
+      <img src="https://source.unsplash.com/random/400x400?party" class="rounded-xl shadow-md" />
+      <img src="https://source.unsplash.com/random/400x400?dance" class="rounded-xl shadow-md" />
+      <img src="https://source.unsplash.com/random/400x400?concert" class="rounded-xl shadow-md" />
+      <img src="https://source.unsplash.com/random/400x400?festival" class="rounded-xl shadow-md" />
+    </div>
+    <div class="text-center mt-6">
+      <button class="bg-pink-600 text-white px-6 py-2 rounded-full">View Full Gallery</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>© 2025 Fest Memories Gallery | Made with ❤️ by Students</p>
+  </footer>
+
+</body>
+</html>
