@@ -1,25 +1,14 @@
 import React from "react";
 
+import polaroidImage from "../assets/polaroid-1.jpg";
+import polaroidimg from "../assets/polaroid-2.jpg";
+import polaroid from "../assets/polaroid-3.jpg";
+import silhouette from "../assets/image.png";
+
 export default function Home() {
   return (
     <div className="min-h-screen ">
-      {/* ===== NAVBAR ===== */}
-      <nav className=" nav flex justify-between items-center px-8 py-4 bg-white shadow-md">
-        <div className=" nav flex items-center gap-2 text-xl font-bold text-pink-700">
-          <span className="text-2xl  text-pink-600;"></span> Memories
-        </div>
-        <ul className="flex gap-6 text-gray-700 font-medium">
-          <li className="cursor-pointer hover:text-indigo-500">Home</li>
-          <li className="cursor-pointer hover:text-indigo-500">Gallery</li>
-          <li className="cursor-pointer hover:text-indigo-500">Golden Moments</li>
-          <li className="cursor-pointer hover:text-indigo-500">Search</li>
-          <li className="cursor-pointer hover:text-indigo-500">Profile</li>
-        </ul>
-        <button className="bg-orange-400 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-500">
-          Upload Photos
-        </button>
-      </nav>
-
+     
       {/* ===== HERO SECTION ===== */}
       {/* === Version A: Pastel Gradient Background === */}
       <section className=" hero relative text-center py-20 px-6 bg-gradient-to-r from-pink-100 via-blue-100 to-green-100 " >
@@ -94,10 +83,11 @@ export default function Home() {
   <section class="py-16 bg-#E6DBCE">
     <h3 class="text-3xl font-bold text-center mb-10">Recent Uploads</h3>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto px-6">
-      <img src="https://source.unsplash.com/random/400x400?party" class="rounded-xl shadow-md" />
-      <img src="https://source.unsplash.com/random/400x400?dance" class="rounded-xl shadow-md" />
-      <img src="https://source.unsplash.com/random/400x400?concert" class="rounded-xl shadow-md" />
-      <img src="https://source.unsplash.com/random/400x400?festival" class="rounded-xl shadow-md" />
+      <img src={polaroidImage} alt="Polaroid photo" className="rounded-xl shadow-md" />
+      <img src={polaroidimg} alt="px" className="rounded-xl shadow-md" />
+       <img src={polaroid} alt="px" className="rounded-xl shadow-md" />
+       <img src={silhouette} alt="freshers pic" className="rounded-xl shadow-md"/>
+      
       
     </div>
     </section>
