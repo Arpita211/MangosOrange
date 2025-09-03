@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Fest Memories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #ff4b5c;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .upload-container {
+      text-align: center;
+      margin: 20px;
+    }
+    .upload-container input {
+      display: none;
+    }
+    .upload-container label {
+      background: linear-gradient(45deg, #ff4b5c, #8338ec);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .upload-container label:hover {
+      background: linear-gradient(45deg, #8338ec, #ff4b5c);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+    }
+    .circle {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .circle:hover {
+      transform: scale(1.05);
+    }
+    .circle img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header>📸 Fest Memories - Gallery</header>
+
+  <!-- Upar Upload Button -->
+  <div class="upload-container">
+    <input type="file" id="mainUpload" accept="image/*" style="display: none;">
+    <label for="mainUpload">+ Upload Photo</label>
+  </div>
+
+  <!-- Gallery Circles -->
+  <div class="gallery-grid">
+    <!-- Fest 1 -->
+    <div class="circle fest1" onclick="document.getElementById('fest1Input').click()">
+      Fest 1
+      <input type="file" id="fest1Input" accept="image/*" style="display: none;">
+    </div>
+
+    <!-- Fest 2 -->
+    <div class="circle fest2" onclick="document.getElementById('fest2Input').click()">
+      Fest 2
+      <input type="file" id="fest2Input" accept="image/*" style="display: none;">
+    </div>
+
+    <!-- Fest 3 -->
+    <div class="circle fest3" onclick="document.getElementById('fest3Input').click()">
+      Fest 3
+      <input type="file" id="fest3Input" accept="image/*" style="display: none;">
+    </div>
+  </div>
+
+  <!-- JS File Attach -->
+  <script src="script.js"></script>
+</body>
+</html>
