@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
@@ -6,7 +8,7 @@
 
 /* Optional: smooth font + background reset */
 body {
-  font-family:cursive;
+font-family: cursive;
   margin: 0;
   padding: 0;
   background-color: #E6DBCE;
@@ -18,7 +20,6 @@ body {
 .hero{
   background-image: url("C:\Users\Dell\Desktop\college memories\MangosOrange\React\fest\src\assets\hero-collage.jpg");
  
-  color: hsl(var(--retro-purple));
    animation: float 3s ease-in-out infinite;
 }
 .hero::before {
@@ -31,9 +32,11 @@ body {
   background: linear-gradient(135deg, 
       hsl(22 78% 52% / 0.9), 
       hsl(258 39% 45% / 0.8), 
-      hsl(170 35% 41% / 0.9));
-  opacity: 0.5;   /* controls transparency */
+      hsl(170 35% 41% / 0.9)
+    );
+  opacity: 0.9;   /* controls transparency */
   z-index: -1;
+  box-shadow: 0 4px 15px hsl(25 15% 15% / 0.15), 0 2px 8px hsl(25 15% 15% / 0.1);
 }
 .content{
   font-weight: bold;
@@ -68,4 +71,13 @@ z-index: 1000;
   }
 
 
-  
+  @keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+}

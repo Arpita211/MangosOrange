@@ -1,0 +1,32 @@
+.hero{
+  background-image: url("C:\Users\Dell\Desktop\college memories\MangosOrange\React\fest\src\assets\hero-collage.jpg");
+ 
+   animation: float 3s ease-in-out infinite;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+      hsl(22 78% 52% / 0.9), 
+      hsl(258 39% 45% / 0.8), 
+      hsl(170 35% 41% / 0.9));
+  opacity: 0.9;   /* controls transparency */
+  z-index: -1;
+
+}
+.content{
+  font-weight: bold;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

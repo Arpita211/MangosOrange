@@ -1,4 +1,5 @@
 import React from "react";
+import SearchPage from "./Search";
 
 import polaroidImage from "../assets/polaroid-1.jpg";
 import polaroidimg from "../assets/polaroid-2.jpg";
@@ -16,10 +17,12 @@ export default function Home() {
        
         <div className="content">
         <p className="text-sm italic text-gray-600 mb-2">~ College Fest Memories ~</p>
-        <h1 className="text-5xl font-extrabold text-black-800 mb-4">
-          Relive Your <span className="text-pink-700">Fest Memories</span>
+        <h1 className="text-5xl font-extrabold text-white mb-4">
+          Relive Your <span  className="text-4xl sm:text-5xl font-extrabold mb-6 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient" >Fest Memories</span>
         </h1>
-        <p className="max-w-2xl mx-auto text-lg text-black font-bold mb-6">
+        <p className="max-w-2xl mx-auto text-lg text-white font-bold mb-6">
           Step into a nostalgic journey through your college fest moments. Discover,
           share, and cherish every captured memory in our digital album.
         </p>
@@ -34,46 +37,54 @@ export default function Home() {
 
         {/* Badges */}
         <div className="absolute left-6 top-12 bg-purple-200 text-purple-700 text-sm font-bold px-3 py-1 rounded-full shadow">
-          ✨ New!
+          
         </div>
        
 
         {/* Stats */}
-        <div className="mt-12 flex justify-center gap-12 text-gray-800">
+        <div className="mt-12 flex justify-center gap-12 text-white">
           <div>
             <h2 className="text-2xl font-bold">5K+</h2>
-            <p className="text-sm text-gray-500">Photos</p>
+            <p className="text-sm text-white">Photos</p>
           </div>
           <div>
             <h2 className="text-2xl font-bold">200+</h2>
-            <p className="text-sm text-gray-500">Events</p>
+            <p className="text-sm text-white">Events</p>
           </div>
           <div>
             <h2 className="text-2xl font-bold">1K+</h2>
-            <p className="text-sm text-gray-500">Students</p>
+            <p className="text-sm text-white">Students</p>
           </div>
         </div>
         </div>
       </section>
       {/*why choose us*/}
       
-      <section class="sec-2 py-16 bg-white">
-    <h3 class="text-3xl font-bold text-center mb-10">Why Choose Us?</h3>
+      <section class=" py-16 bg-white">
+    <h3 class="text-3xl font-bold text-gray-800 text-center mb-10">Why Choose Us?</h3>
     <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
       <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
-        <h4 class="text-xl font-semibold text-pink-600"> Easy Upload</h4>
+        <h4 class="text-xl sm:text-2xl font-extrabold mb-6 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient"> Easy Upload</h4>
         <p class="text-gray-600 mt-2">Upload your photos in seconds.</p>
       </div>
       <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
-        <h4 class="text-xl font-semibold text-pink-600">🎭 Event Categories</h4>
+        <h4 class="text-xl sm:text-2xl font-extrabold mb-6 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient"> Event Categories</h4>
         <p class="text-gray-600 mt-2">Cultural, Sports, Tech, Music, Dance.</p>
       </div>
       <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
-        <h4 class="text-xl font-semibold text-pink-600">🔒 Privacy Control</h4>
+        <h4 class="text-xl sm:text-2xl font-extrabold mb-6 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient"> Privacy Control</h4>
         <p class="text-gray-600 mt-2">Make your memories public or private.</p>
       </div>
       <div class="p-6 shadow-lg rounded-2xl bg-pink-50 hover:scale-105 transition">
-        <h4 class="text-xl font-semibold text-pink-600">⭐ Golden Moments</h4>
+        <h4 class="text-xl sm:text-2xl font-extrabold mb-6 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient"> Golden Moments</h4>
         <p class="text-gray-600 mt-2">Highlight top events from your fest.</p>
       </div>
     </div>
@@ -81,7 +92,7 @@ export default function Home() {
 
   
   <section class="py-16 bg-#E6DBCE">
-    <h3 class="text-3xl font-bold text-center mb-10">Recent Uploads</h3>
+    <h3 class="text-3xl font-bold  text-gray-700 text-center mb-10">Recent Uploads</h3>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto px-6">
       <img src={polaroidImage} alt="Polaroid photo" className="rounded-xl shadow-md" />
       <img src={polaroidimg} alt="px" className="rounded-xl shadow-md" />

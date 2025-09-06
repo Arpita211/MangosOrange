@@ -1,4 +1,6 @@
 // src/components/Footer.jsx
+import { Link } from "react-router-dom";
+import { Facebook, FacebookIcon, Instagram,InstagramIcon,Twitter, TwitterIcon} from "lucide-react"
 function Footer() {
   return (
     <footer style={{ background: "#faf1f1ff", color: "#727171ff", padding: "30px" }}>
@@ -7,12 +9,12 @@ function Footer() {
         
         {/* Brand */}
         <div>
-          <h2 style={{ color:"#9e165aff" , fontFamily:"cursive", fontSize:"19px"}}> Memories</h2>
+          <h2 className="text-2xl font-bold" style={{ color:"#9e165aff" , fontFamily:"cursive", fontSize:"19px"}}> Memories</h2>
           <p>Preserving your college fest moments in a digital album.</p>
           <div style={{ marginTop: "10px" }}>
-            <a href="#" style={{ marginRight: "10px", color: "#0f0f0fff" }}>Instagram</a>
-            <a href="#" style={{ marginRight: "10px", color: "#181818ff" }}>Twitter</a>
-            <a href="#" style={{ color: "#050505ff" }}>Facebook</a>
+            <a href="#" style={{ marginRight: "10px", color: "#0f0f0fff" }}><InstagramIcon/></a>
+            <a href="#" style={{ marginRight: "10px", color: "#181818ff" }}><TwitterIcon/></a>
+            <a href="#" style={{ color: "#050505ff" }}><FacebookIcon/></a>
           </div>
         </div>
 
