@@ -17,12 +17,12 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <li><Link to="/" className="cursor-pointer hover:text-indigo-500">Home</Link></li>
-          <li className="cursor-pointer hover:text-indigo-500">Gallery</li>
-          <li className="cursor-pointer hover:text-indigo-500">Golden Moments</li>
-          <li><Link to="/search" className="cursor-pointer hover:text-indigo-500">Search</Link></li>
-          <li className="cursor-pointer hover:text-indigo-500">Profile</li>
+        <ul className="hidden md:flex gap-6 text-gray-800 font-normal text-lg ">
+          <li><Link to="/" className="cursor-pointer hover:text-purple-700">Home</Link></li>
+          <li className="cursor-pointer hover:text-purple-700">Gallery</li>
+          <li className="cursor-pointer hover:text-purple-700">Golden Moments</li>
+          <li><Link to="/search" className="cursor-pointer hover:text-purple-700">Memory Finder</Link></li>
+          <li className="cursor-pointer hover:text-purple-700">Profile</li>
         </ul>
 
         {/* Upload Button (Desktop only) */}
@@ -49,7 +49,7 @@ export default function Navbar() {
           <li><Link to="/" onClick={() => setMenuOpen(false)} className="hover:text-indigo-500">Home</Link></li>
           <li className="hover:text-indigo-500">Gallery</li>
           <li className="hover:text-indigo-500">Golden Moments</li>
-          <li><Link to="/search" onClick={() => setMenuOpen(false)} className="hover:text-indigo-500">Search</Link></li>
+          <li><Link to="/search" onClick={() => setMenuOpen(false)} className="hover:text-indigo-500">Memory Finder</Link></li>
           <li className="hover:text-indigo-500">Profile</li>
           <button className="bg-orange-400 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-500">
             Upload Photos

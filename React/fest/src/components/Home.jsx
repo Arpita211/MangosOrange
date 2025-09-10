@@ -17,12 +17,12 @@ export default function Home() {
        
         <div className="content">
         <p className="text-sm italic text-gray-600 mb-2">~ College Fest Memories ~</p>
-        <h1 className="text-5xl font-extrabold text-white mb-4">
-          Relive Your <span  className="text-4xl sm:text-5xl font-extrabold mb-6 
+        <h1 className=" text-4xl md:text-6xl lg:text-7xl text-white mb-6 font-extrabold text-white mb-4">
+          Relive Your <br></br><span  className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 
              bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
              bg-clip-text text-transparent animate-gradient" >Fest Memories</span>
         </h1>
-        <p className="max-w-2xl mx-auto text-lg text-white font-bold mb-6">
+        <p className="max-w-2xl mx-auto text-xl text-white font-normal mb-6">
           Step into a nostalgic journey through your college fest moments. Discover,
           share, and cherish every captured memory in our digital album.
         </p>

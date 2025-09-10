@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import style from "./Search.module.css";
+import { LucideChevronsLeftRightEllipsis, MoveLeftIcon, Search } from 'lucide-react';
+import PopularSearches from './Popular';
+
+
 
 const SearchPage = () => {
   const [searchText, setSearchText] = useState('');
@@ -52,27 +56,39 @@ const SearchPage = () => {
   );
 
   return (
-    <div className={style.hero} style={{ padding: '20px', fontFamily: 'cursive'}}>
+    <div>
+    <div className={style.hero} style={{ padding: '20px', fontFamily: 'Fredoka'}}>
       {/* Header */}
       <div   style={{ textAlign: 'center', marginBottom: '30px' }}>
-        <h1 className="text-xl font-extrabold text-white mb-4" >
-          College <span > Fest Memories</span>
-        </h1>
-       <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-6 leading-tight">
-  <span className="block text-white">Search and explore</span>
-  <span className="block bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 bg-clip-text text-transparent animate-gradient">
-    our festival memories
+        
+       <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center mb-6 leading-tight"><br></br>
+  <span className="block text-white">Highlighting The Vibes </span>
+  <span className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient">
+    That Last Forever
   </span>
-</h1>
+  </h1>
+  
+   <p className="max-w-2xl mx-auto text-xl text-white font-normal italic mb-6">From the silly to the special, every memory deserves a little drama—and the spotlight is where we give it that retro shine</p>
+
+  
 
 
 
        
       </div>
+      <div className='flex justify-center  text-2xl md:text-3xl lg:text-4xl text-white mb-8 font-bold '>
+        <h1>Popular Searches</h1>
+        <PopularSearches/>
+        
+      </div>
 
       {/* Search Box */}
-      <div style={{ marginBottom: '30px', textAlign: 'center' }}>
+      <div style={{ marginBottom: '30px', textAlign: 'center',  alignItems: 'center'}}>
+       
         <input
+       
           type="text"
           placeholder="Search memories..."
           value={searchText}
@@ -142,7 +158,7 @@ const SearchPage = () => {
               color: '#888'
             }}>
               <div>
-              <div style={{ marginBottom: '5px' }}>
+              <div style={{ marginBottom: '5px'  }}>
                 <strong>By:</strong> {memory.author}
               </div>
               <div>
@@ -165,7 +181,12 @@ const SearchPage = () => {
           </p>
         </div>
       )}
+      
     </div>
+   
+    
+    </div>
+   
   );
 };
 

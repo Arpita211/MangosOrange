@@ -7,8 +7,11 @@
 @tailwind utilities;
 
 /* Optional: smooth font + background reset */
+:root{
+   --gradient-sunset: linear-gradient(135deg, hsl(22 78% 52%), hsl(35 65% 58%), hsl(42 72% 65%));
+}
 body {
-font-family: cursive;
+font-family: Fredoka;
   margin: 0;
   padding: 0;
   background-color: #E6DBCE;
@@ -38,9 +41,7 @@ font-family: cursive;
   z-index: -1;
   box-shadow: 0 4px 15px hsl(25 15% 15% / 0.15), 0 2px 8px hsl(25 15% 15% / 0.1);
 }
-.content{
-  font-weight: bold;
-}
+
 
 @keyframes float {
   0%, 100% {
@@ -81,3 +82,6 @@ z-index: 1000;
   background-size: 200% 200%;
   animation: gradient 5s ease infinite;
 }
+  .bg-gradient-sunset {
+    background: var(--gradient-sunset);
+  }
