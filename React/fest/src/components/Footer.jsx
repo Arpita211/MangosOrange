@@ -9,9 +9,13 @@ function Footer() {
         
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold" style={{ color:"#9e165aff" , fontFamily:"cursive", fontSize:"19px"}}> Memories</h2>
+           <div className="text-xl font-extrabold cursor-pointer">
+          <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-pink-700 bg-clip-text text-transparent animate-gradient">
+            Memories
+          </span>
+        </div>
           <p>Preserving your college fest moments in a digital album.</p>
-          <div style={{ marginTop: "10px" }}>
+          <div style={{ marginTop: "10px",  display:'flex'}}>
             <a href="#" style={{ marginRight: "10px", color: "#0f0f0fff" }}><InstagramIcon/></a>
             <a href="#" style={{ marginRight: "10px", color: "#181818ff" }}><TwitterIcon/></a>
             <a href="#" style={{ color: "#050505ff" }}><FacebookIcon/></a>
@@ -59,9 +63,7 @@ function Footer() {
         <p>
           © {new Date().getFullYear()} Memories.  
         </p>
-        <p style={{ fontStyle: "italic", marginTop: "5px" }}>
-          ~ Vintage vibes, modern memories ~
-        </p>
+       
       </div>
     </footer>
   );

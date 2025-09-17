@@ -1,32 +1,74 @@
-.hero{
-  background-image: url("C:\Users\Dell\Desktop\college memories\MangosOrange\React\fest\src\assets\hero-collage.jpg");
- 
-   animation: float 3s ease-in-out infinite;
+/* Full-page background container */
+.head {
+  position: relative;
+  width: 100%;
+   /* full viewport height */
+  background-image: url("/assets/hero-collage.jpg"); /* image in public folder */
+  background-size: 190%;       /* cover whole container */
+  background-position: center;  /* center image */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;      /* center content horizontally */
+  align-items: center;          /* center content vertically */
 }
-.hero::before {
-  content: "";
+
+/* Gradient overlay using a separate div */
+.gradient-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, 
-      hsl(22 78% 52% / 0.9), 
-      hsl(258 39% 45% / 0.8), 
-      hsl(170 35% 41% / 0.9));
-  opacity: 0.9;   /* controls transparency */
-  z-index: -1;
-
-}
-.content{
-  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 100, 50, 0.7),
+    rgba(100, 50, 255, 0.7)
+  );
+  z-index: 1; /* overlay above background */
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+/* Content above overlay */
+.head .content {
+  position: relative;
+  z-index: 2; /* content above overlay */
+  color: white;
+  text-align: center;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.grid > div {
+  max-width: 300px; /* Prevents any single card from exceeding 300px */
+  margin: 0 auto;
+    
+}
+.background {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8f1e7, #e9dccb);
+  overflow: hidden;
+}
+.background::before,
+.background::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.background::before {
+  top: 1.5rem;
+  left: 1.5rem;
+  background: #facc15; /* amber */
+}
+.background::after {
+  top: 5rem;
+  right: 3rem;
+  background: #fb923c; /* orange */
+}
+

@@ -26,7 +26,13 @@ export default function PopularSearches() {
 
   return (
     <motion.div
-      className="w-full max-w-2xl mx-auto p-4 sm:p-6 bg-gray-900 text-white rounded-2xl shadow-lg"
+      className="w-full max-w-2xl mx-auto p-4 sm:p-6 bg-transparent text-gray-700 rounded-2xl shadow-lg backdrop-blur-md
+
+
+           
+
+             p-5 
+             border border-pink-200/90 hover:border-pink-400/100"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
@@ -38,19 +44,26 @@ export default function PopularSearches() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        <h5 className="text-gray-400 mb-3 text-base sm:text-lg font-semibold">
-          🔥 Popular Searches
+        <h5 className="text-white mb-3 text-base text-2xl md:text-3xl lg:text-3xl  ">
+          Popular Searches
         </h5>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-5">
           {popularItems.map((item, idx) => (
             <motion.button
               key={item}
               onClick={() => handlePopularClick(item)}
-              className="px-3 py-1 text-xs sm:text-sm border border-gray-700 rounded-full hover:bg-gray-800 hover:shadow-md transition-transform duration-200"
+              className="px-2 py-1 bg-white/70 backdrop-blur-md
+              text-sm
+
+ flex
+             rounded-2xl shadow-lg shadow-pink-200/40
+ hover:shadow-5xl bt-gradient-sunset
+             transform hover:scale-105   p-3
+             border border-pink-200/90 hover:border-pink-400/100"
               whileHover={{ scale: 1.08 }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 + idx * 0.05, duration: 0.4 }}
+              transition={{ delay: 0.1 + idx * 0.05, duration: 0.1 }}
             >
               {item}
             </motion.button>
@@ -59,7 +72,7 @@ export default function PopularSearches() {
       </motion.section>
 
       {/* ==== Search Bar ==== */}
-      <motion.form
+      {/* <motion.form
         onSubmit={handleSearch}
         className="flex flex-col sm:flex-row gap-3 sm:gap-2"
         initial={{ opacity: 0, y: 20 }}
@@ -79,7 +92,7 @@ export default function PopularSearches() {
         >
           Search
         </button>
-      </motion.form>
+      </motion.form>*/}
     </motion.div>
   );
 }

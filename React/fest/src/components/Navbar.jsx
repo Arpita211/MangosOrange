@@ -8,7 +8,6 @@ export default function Navbar() {
     <div>
       {/* ===== NAVBAR ===== */}
       <nav className="flex justify-between items-center px-6 py-4 bg-white shadow-md relative z-50">
-        
         {/* Logo / Brand */}
         <div className="text-2xl font-extrabold cursor-pointer">
           <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-pink-700 bg-clip-text text-transparent animate-gradient">
@@ -18,20 +17,30 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-gray-800 font-normal text-lg ">
-          <li><Link to="/" className="cursor-pointer hover:text-purple-700">Home</Link></li>
+          <li>
+            <Link to="/" className="cursor-pointer hover:text-purple-700">
+              Home
+            </Link>
+          </li>
           <li className="cursor-pointer hover:text-purple-700">Gallery</li>
-          <li className="cursor-pointer hover:text-purple-700">Golden Moments</li>
-          <li><Link to="/search" className="cursor-pointer hover:text-purple-700">Memory Finder</Link></li>
+          <li className="cursor-pointer hover:text-purple-700">
+            Golden Moments
+          </li>
+          <li>
+            <Link to="/search" className="cursor-pointer hover:text-purple-700">
+              Memory Finder
+            </Link>
+          </li>
           <li className="cursor-pointer hover:text-purple-700">Profile</li>
         </ul>
 
         {/* Upload Button (Desktop only) */}
-        <button className="hidden md:block bg-orange-400 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-500">
+        <button className="hidden md:block bg-orange-400 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-500 bg-gradient-sunset">
           Upload Photos
         </button>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="md:hidden text-gray-700 text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -46,10 +55,26 @@ export default function Navbar() {
         }`}
       >
         <ul className="flex flex-col items-center gap-4 py-6 text-gray-700 font-medium">
-          <li><Link to="/" onClick={() => setMenuOpen(false)} className="hover:text-indigo-500">Home</Link></li>
+          <li>
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-indigo-500"
+            >
+              Home
+            </Link>
+          </li>
           <li className="hover:text-indigo-500">Gallery</li>
           <li className="hover:text-indigo-500">Golden Moments</li>
-          <li><Link to="/search" onClick={() => setMenuOpen(false)} className="hover:text-indigo-500">Memory Finder</Link></li>
+          <li>
+            <Link
+              to="/search"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-indigo-500"
+            >
+              Memory Finder
+            </Link>
+          </li>
           <li className="hover:text-indigo-500">Profile</li>
           <button className="bg-orange-400 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-500">
             Upload Photos
